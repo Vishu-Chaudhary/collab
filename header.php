@@ -31,18 +31,28 @@
         <!-- Items -->
         <div class="collapse navbar-collapse" id="topNavBar">
             <ul class="nav navbar-nav">
-                <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Profile</a></li>
+                <li><a href="profile.php"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Profile</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp; My Projects</a></li>
 
 
             </ul>
             <form class="navbar-form navbar-left" role="search" method="get" action="#">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="q" value="#">
+                    <input type="text" class="form-control" name="q" value="">
                 </div>
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
             <ul class="nav navbar-nav navbar-right">
+
+              <li> <a href="#"> <span class="glyphicon glyphicon-envelope" aria-hidden="true" onclick="openNav()">&nbsp;Collab Requests</a></span></li>
+
                 <li ><a href="global.php"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp; Global Projects</a></li>
                 <li>
                     <a href="login.php">
